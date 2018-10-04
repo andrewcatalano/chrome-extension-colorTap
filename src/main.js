@@ -10,6 +10,13 @@ let currX;
 let currY;
 let flag = false;
 
+document.addEventListener('click', function(e){
+    if(e.target.classList.contains("color-picker")){
+        console.log(e.target.dataset.color);
+        let color = e.target.dataset.color;
+    }
+});
+
 canvas.addEventListener('mousedown', function(e){
     currX = e.clientX - canvas.offsetLeft;
     currY = e.clientY - canvas.offsetTop;

@@ -27,8 +27,22 @@
     height: 500px;
     align-self: baseline;
     margin-top: 30px;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
 }
-
+#color-container{
+    display: flex;
+    flex-flow: row wrap;
+    height: 80px;
+    margin-top: 30px;
+    align-self: center;
+}
+.color-picker{
+    width: 25%;
+    height: 20px;
+    cursor: pointer;
+}
 
 
 
