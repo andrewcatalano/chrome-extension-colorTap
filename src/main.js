@@ -12,10 +12,13 @@ let currY;
 document.addEventListener('mousedown', function(e){
     currX = e.clientX - canvas.offsetLeft;
     currY = e.clientY - canvas.offsetTop;
-    draw('down', color);
+    draw('down', e);
+});
 
-
-    
+document.addEventListener('mousemove', function(e){
+    currX = e.clientX - canvas.offsetLeft;
+    currY = e.clientY - canvas.offsetTop;
+    draw('down', e);
 })
 
 function draw(status, color){
@@ -23,9 +26,10 @@ function draw(status, color){
         ctx.beginPath();
         ctx.fillStyle = color;
         ctx.fillRect(currX, currY, 10, 10);
-        console.log(currX, currY);
         ctx.closePath();
-        console.log('called draw')
+    }
+    if(status === 'move'){
+
     }
 }
 
