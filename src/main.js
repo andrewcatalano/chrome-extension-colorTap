@@ -12,8 +12,17 @@ let flag = false;
 
 document.addEventListener('click', function(e){
     if(e.target.classList.contains("color-picker")){
-        console.log(e.target.dataset.color);
-        let color = e.target.dataset.color;
+        color = e.target.dataset.color;
+    }
+});
+
+document.querySelector('#eraser').addEventListener('click', function(e){
+    if(document.querySelector('#eraser').checked === true){
+        color = 'white';
+        strokeWidth = 10;
+    }else{
+        color = 'black';
+        strokeWidth = 2;
     }
 });
 

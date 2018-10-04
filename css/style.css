@@ -18,24 +18,26 @@
     top:5%;
     left:5%;
     border: 1px solid;
+    background-color: white;
 }
 
 #tools{
     grid-area: tools;
     border: 1px solid black;
     width: 35%;
-    height: 500px;
+    height: 485px;
     align-self: baseline;
     margin-top: 30px;
     display: flex;
     flex-flow: column;
     text-align: center;
+    padding-top: 15px;
 }
 #color-container{
     display: flex;
     flex-flow: row wrap;
     height: 80px;
-    margin-top: 30px;
+    margin: 10px 0px 60px 0px;
     align-self: center;
 }
 .color-picker{
