@@ -18,7 +18,7 @@
             <h4 id="color-title">Color Picker</h4>
             <div id="color-container">
                 <div class="color-picker" data-color="red" style="background-color: red; padding: 5px;"></div>
-                <div class="color-picker" data-color="yellow" style="background-color: yellow; padding: 5px;"></div>
+                <div class="color-picker" data-color="#f5f52d" style="background-color: #f5f52d; padding: 5px;"></div>
                 <div class="color-picker" data-color="blue" style="background-color: blue; padding: 5px;"></div>
                 <div class="color-picker" data-color="orange" style="background-color: orange; padding: 5px;"></div>
                 <div class="color-picker" data-color="green" style="background-color: green; padding: 5px;"></div>
@@ -31,8 +31,14 @@
                 <div class="color-picker" data-color="palevioletred" style="background-color: palevioletred; padding: 5px;"></div>
             </div>
             <h4 id="stroke-title">Stroke Size</h4>
-            <div>Choose the size</div>
-            <p>Eraser: <input id="eraser" type="checkbox"></p>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="4" value="2" class="slider" id="myRange">
+                <input id="slider-value" type="text" placeholder="2" readonly>
+            </div>
+            <p>Eraser:
+                <input id="eraser" type="checkbox">
+            </p>
+            <button id="clear">Clear Canvas</button>
         </div>
 
     </div>

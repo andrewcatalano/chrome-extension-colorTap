@@ -17,13 +17,15 @@
     position:absolute;
     top:5%;
     left:5%;
-    border: 1px solid;
+    border: 2px solid grey;
+    border-radius: 5px;
     background-color: white;
 }
 
 #tools{
     grid-area: tools;
-    border: 1px solid black;
+    border: 2px solid grey;
+    border-radius: 5px;
     width: 35%;
     height: 485px;
     align-self: baseline;
@@ -32,6 +34,7 @@
     flex-flow: column;
     text-align: center;
     padding-top: 15px;
+    background-color: white;
 }
 #color-container{
     display: flex;
@@ -45,6 +48,25 @@
     height: 20px;
     cursor: pointer;
 }
+.slidecontainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.slider{
+    width: 50%;
+    margin-right: 10px;
+}
+#slider-value{
+    width: 20%;
+}
 
+#clear{
+    margin-top: 10px;
+    width: 80%;
+    align-self: center;
+    border: 1px solid rgba(127, 127, 127, 0.8);
+    border-radius: 3px;
+}
 
 
