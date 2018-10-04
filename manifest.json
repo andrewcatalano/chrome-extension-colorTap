@@ -1,0 +1,12 @@
+{
+    "name": "artPage",
+    "version": "1.0",
+    "description": "Build art page extension!",
+    "manifest_version": 2,
+    "permissions": ["storage"],
+    "chrome_url_overrides" : {"newtab" : "artboard.html"},
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+      }
+  }

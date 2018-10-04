@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+}
+
+#container{
+    /* display: flex;
+    justify-content: center; */
+    display:grid;
+    grid-template-columns: 700px auto;
+    grid-template-areas: "can tools";
+    height: 100vh;
+    background-color: blanchedalmond;
+    
+}
+
+#can{
+    grid-area: can;
+    position:absolute;
+    top:10%;
+    left:10%;
+    border: 1px solid;
+}
+
+#tools{
+    grid-area: tools;
+    border: 1px solid black;
+    width: 30%;
+    height: 400px;
+    align-self: baseline;
+    
+}
+
+
+
+
